@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>kalyan Prime</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Lato, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.85);
+      border-radius: 10px;
+      box-shadow: 0 0 20px #222;
+    }
+    .center {
+      text-align: center;
+    }
+    .main-img {
+      width: 170px;
+      border-radius: 30px;
+      border: 5px solid #fff;
+      margin: 20px auto;
+      display: block;
+    }
+    .download-btn {
+      display: inline-block;
+      background: #0174c7;
+      color: #fff;
+      padding: 15px 90px;
+      font-size: 20px;
+      border-radius: 3px;
+      border: none;
+      margin: 25px 0;
+      box-shadow: none;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .download-btn:hover {
+      background: #01508a;
+    }
+    .features {
+      text-align: left;
+      margin: 30px 0 10px 0;
+      font-size: 20px;
+    }
+    .features strong {
+      color: #fff;
+    }
+    .advertise {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 20px;
+      color: #7ed321;
+    }
+    .advertise a {
+      color: #f8e71c;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    @media (max-width: 800px) {
+      .container {
+        padding: 10px;
+      }
+      .main-img {
+        border-radius: 0;
+        width: 170px;
+      }
+      .download-btn {
+        width: 100%;
+        padding: 5px;
+        font-size: 25px;
+        margin: 5px 0;
+      }
+      .features {
+        font-size: 16px;
+      }
+      .advertise {
+        font-size: 16px;
+      }
+    }
+  </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1351549839902319');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1351549839902319&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
+<body>
+  <div class="container">
+    <div class="center">
+      <a href="http:///matkaprime.com" target="_blank">
+        <img src="images/matkaprimenew.png" alt="Kalyan Prime" class="main-img">
+      </a>
+      <div>
+        <p><strong>Welcome to Kalyan King</strong></p>
+        <p><strong>लाखों की निकासी देने वाला एकमात्र एप्लीकेशन</strong></p>
+      </div>
+      <!-- First Download Button -->
+      <a class="download-btn" href="https://matkaprime.com" target="_blank" onclick="trackSubscribe();">
+        DOWNLOAD NOW
+      </a>
+    </div>
+    <div class="features">
+      <p><strong>1. MINIMUM DEPOSIT 200/-</strong></p>
+      <p><strong>2. MINIMUM WITHDRAWAL 500/-</strong></p>
+      <p><strong>3. WITHDRAW TIME 24x7 ANYTIME (SUNDAY WITHDRAWAL OFF)</strong></p>
+      <p><strong>4. GAME RATE SINGLE (10-100) JODI (10-950)</strong></p>
+      <p><strong>5. MIN BET- 10/-</strong></p>
+      <p><strong>SPECIAL = ALL MARKET AVAILABLE (GALI - DS)</strong></p>
+      <p><strong>इधर उधर धोखा ना खाए विश्वसनीय एप्लिकेशन के साथ जुड़ें आपका विश्वास हमारी गारंटी</strong></p>
+      <p><strong>APP INSTALL NOW...............</strong></p>
+      <!-- Second Download Button -->
+     <div class="center">
+     <a class="download-btn" href="https://matkaprime.com" target="_blank" onclick="trackSubscribe();">
+       DOWNLOAD NOW
+      </a>
+    </div>
+    </div>
+    <div class="advertise">
+      This Channel Advertise By
+      <a href="https://t.me/IDF24" target="_blank">APEagency</a>
+    </div>
+  </div>
+
+  <script>
+function trackSubscribe() {
+  // Agar already fire ho chuka hai
+  if (localStorage.getItem('subscribed') === 'true') {
+    console.log("Already subscribed event fired, not sending again.");
+    return;
+  }
+
+  const eventId = 'subscribe_' + Date.now();
+
+  // 🔹 Pixel Event (Browser only)
+  fbq('trackCustom', 'Subscribe', {}, { eventID: eventId });
+
+  // Mark as subscribed (taaki dobara na fire ho)
+  localStorage.setItem('subscribed', 'true');
+}
+</script>
+
+</body>
+</html>
